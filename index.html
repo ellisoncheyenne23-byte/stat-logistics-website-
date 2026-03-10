@@ -10,12 +10,7 @@
         :root { --gold: #D4AF37; }
         body { font-family: 'Inter', sans-serif; background-color: #000000; color: #ffffff; line-height: 1.8; }
         
-        .main-brand-header {
-            font-weight: 900;
-            letter-spacing: -0.01em;
-            text-transform: uppercase;
-            line-height: 1.2;
-        }
+        .main-brand-header { font-weight: 900; letter-spacing: -0.01em; text-transform: uppercase; line-height: 1.1; }
         
         .stat-brand { 
             font-style: italic; 
@@ -37,43 +32,23 @@
             color: #000; 
             animation: shimmer 3s infinite linear;
         }
-        @keyframes shimmer {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
+        @keyframes shimmer { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
 
-        .header-image {
-            width: 100%;
-            max-width: 1050px;
-            height: auto;
-            margin: 0 auto;
-            display: block;
-            border: 2px solid #D4AF37;
-            border-radius: 4px;
-            box-shadow: 0 0 60px rgba(212, 175, 55, 0.3);
-        }
-
-        .sector-card {
-            background: rgba(255, 255, 255, 0.03);
-            border-top: 4px solid var(--gold);
-            backdrop-filter: blur(10px);
-        }
-
+        .header-image { width: 100%; max-width: 1050px; margin: 0 auto; display: block; border: 2px solid #D4AF37; border-radius: 4px; box-shadow: 0 0 60px rgba(212, 175, 55, 0.3); }
+        .sector-card { background: rgba(255, 255, 255, 0.03); border-top: 4px solid var(--gold); backdrop-filter: blur(10px); transition: 0.3s; }
+        .sector-card:hover { background: rgba(255, 255, 255, 0.07); }
         .exclamation-tight { margin-left: -0.05em; }
     </style>
 </head>
 <body>
 
     <div class="bg-zinc-900 py-4 text-center border-b border-zinc-800">
-        <p class="text-[10px] font-bold text-[#D4AF37] uppercase tracking-[0.5em]">
-            Durham • Surrounding Counties • Family Founded & Operated
-        </p>
+        <p class="text-[10px] font-bold text-[#D4AF37] uppercase tracking-[0.5em]">Durham • Surrounding Counties • Family Founded & Operated</p>
     </div>
 
     <div class="py-16 bg-black text-center">
         <div class="max-w-7xl mx-auto px-4">
-            <h1 class="main-brand-header text-4xl md:text-7xl lg:text-8xl">
+            <h1 class="main-brand-header text-5xl md:text-8xl">
                 <span class="stat-brand">STAT</span> LOGISTICS & <br class="hidden md:block"> FREIGHT
             </h1>
         </div>
@@ -81,18 +56,14 @@
 
     <nav class="bg-black/95 border-y border-zinc-900 p-4 sticky top-0 z-50 backdrop-blur-md">
         <div class="max-w-7xl mx-auto flex justify-between items-center px-4">
-            <div class="text-sm font-black uppercase tracking-widest text-zinc-400">
-                Professional Courier Services
-            </div>
-            <a href="tel:9198054450" class="gold-bg px-6 py-2 rounded-lg font-black text-[10px] uppercase tracking-widest shadow-xl">
-                CALL NOW
-            </a>
+            <div class="text-sm font-black uppercase tracking-widest text-zinc-400 italic">Professional Courier Services</div>
+            <a href="tel:9198054450" class="gold-bg px-6 py-2 rounded-lg font-black text-[10px] uppercase tracking-widest shadow-xl">CALL NOW</a>
         </div>
     </nav>
 
     <header class="py-16 px-6 text-center">
         <div class="max-w-7xl mx-auto">
-            <img src="Screenshot_20260310-080705_Photos~2.png" alt="STAT Logistics Profile" class="header-image mb-16">
+            <img src="Screenshot_20260310-080705_Photos~2.png" alt="STAT Logistics & Freight" class="header-image mb-16">
             
             <h2 class="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-8">
                 MISSION READY - <span class="stat-brand">STAT</span><span class="stat-brand exclamation-tight">!</span>
@@ -103,59 +74,102 @@
                     Professional courier services for high-stakes environments. From critical medical transport to confidential government and corporate assets, we prioritize time-sensitive precision.
                 </p>
             </div>
-
-            <a href="tel:9198054450" class="gold-bg inline-block px-12 py-5 rounded-2xl font-black text-xl uppercase tracking-widest shadow-2xl transition hover:scale-105">
-                CALL (919) 805-4450
-            </a>
+            <a href="tel:9198054450" class="gold-bg inline-block px-12 py-5 rounded-2xl font-black text-xl uppercase tracking-widest shadow-2xl transition hover:scale-105">(919) 805-4450</a>
         </div>
     </header>
 
     <section class="py-24 bg-zinc-950 px-6 border-y border-zinc-800">
         <div class="max-w-7xl mx-auto">
-            <h3 class="text-sm gold font-bold tracking-[0.6em] uppercase mb-16 text-center">Courier Service Divisions</h3>
+            <h3 class="text-sm gold font-bold tracking-[0.6em] uppercase mb-16 text-center text-[#D4AF37]">Courier Service Divisions</h3>
             
             <div class="grid md:grid-cols-2 gap-10">
                 <div class="sector-card p-12 rounded-xl">
-                    <h4 class="text-3xl font-bold mb-8 gold uppercase tracking-tight border-b border-zinc-800 pb-4 italic">Medical Transport</h4>
+                    <h4 class="text-3xl font-bold mb-8 text-[#D4AF37] uppercase tracking-tight border-b border-zinc-800 pb-4 italic">Medical Transport</h4>
                     <ul class="space-y-4 text-zinc-300 text-md">
-                        <li class="flex items-start"><span class="gold mr-3 font-bold">✔</span> BBP / OSHA / HIPAA-Conscious Handling</li>
-                        <li class="flex items-start"><span class="gold mr-3 font-bold">✔</span> Lab & Specimen Diagnostic Delivery</li>
-                        <li class="flex items-start"><span class="gold mr-3 font-bold">✔</span> Pharmaceutical & Surgical Equipment</li>
-                        <li class="flex items-start"><span class="gold mr-3 font-bold">✔</span> Dedicated Chain of Custody Documentation</li>
-                        <li class="flex items-start"><span class="gold mr-3 font-bold">✔</span> Scheduled Routes & Emergency STAT Runs</li>
+                        <li class="flex items-start"><span class="text-[#D4AF37] mr-3 font-bold">✔</span> BBP / OSHA / HIPAA-Conscious Handling</li>
+                        <li class="flex items-start"><span class="text-[#D4AF37] mr-3 font-bold">✔</span> Lab & Specimen Diagnostic Delivery</li>
+                        <li class="flex items-start"><span class="text-[#D4AF37] mr-3 font-bold">✔</span> Pharmaceutical & Surgical Equipment</li>
+                        <li class="flex items-start"><span class="text-[#D4AF37] mr-3 font-bold">✔</span> Dedicated Chain of Custody Documentation</li>
+                        <li class="flex items-start"><span class="text-[#D4AF37] mr-3 font-bold">✔</span> Scheduled Routes & Emergency STAT Runs</li>
                     </ul>
                 </div>
 
                 <div class="sector-card p-12 rounded-xl">
-                    <h4 class="text-3xl font-bold mb-8 gold uppercase tracking-tight border-b border-zinc-800 pb-4 italic">Commercial & Government</h4>
+                    <h4 class="text-3xl font-bold mb-8 text-[#D4AF37] uppercase tracking-tight border-b border-zinc-800 pb-4 italic">Commercial & Government</h4>
                     <ul class="space-y-4 text-zinc-300 text-md">
-                        <li class="flex items-start"><span class="gold mr-3 font-bold">✔</span> Legal & Court Document Filing</li>
-                        <li class="flex items-start"><span class="gold mr-3 font-bold">✔</span> Interoffice & Multi-Agency Mail Routes</li>
-                        <li class="flex items-start"><span class="gold mr-3 font-bold">✔</span> Government Office Asset Transfers</li>
-                        <li class="flex items-start"><span class="gold mr-3 font-bold">✔</span> Secure Business Freight & Logistics</li>
-                        <li class="flex items-start"><span class="gold mr-3 font-bold">✔</span> Privacy & Discretion Focused Logistics</li>
+                        <li class="flex items-start"><span class="text-[#D4AF37] mr-3 font-bold">✔</span> Legal & Court Document Filing</li>
+                        <li class="flex items-start"><span class="text-[#D4AF37] mr-3 font-bold">✔</span> Interoffice & Multi-Agency Mail Routes</li>
+                        <li class="flex items-start"><span class="text-[#D4AF37] mr-3 font-bold">✔</span> Government Office Asset Transfers</li>
+                        <li class="flex items-start"><span class="text-[#D4AF37] mr-3 font-bold">✔</span> Secure Business Freight & Logistics</li>
+                        <li class="flex items-start"><span class="text-[#D4AF37] mr-3 font-bold">✔</span> Privacy & Discretion Focused Logistics</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="py-24 px-6 max-w-6xl mx-auto">
-        <div class="text-center mb-20">
-            <p class="text-2xl md:text-3xl italic gold mb-4">"30+ Years in the Medical Field"</p>
-            <h3 class="text-4xl font-bold uppercase tracking-widest">The Founders</h3>
-            <p class="mt-6 text-zinc-500 max-w-2xl mx-auto italic">Founded by a mother and son, our business is built on a shared commitment to providing the Durham professional community with the highest standard of custodial integrity.</p>
-        </div>
-        
-        <div class="grid md:grid-cols-2 gap-12">
-            <div class="bg-zinc-900 p-12 rounded-3xl border border-zinc-800">
-                <h4 class="text-3xl font-bold mb-1 uppercase tracking-tight text-white">Kathy Ellison</h4>
-                <p class="stat-brand uppercase text-xs tracking-widest mb-8 font-bold italic">Mother • Registered Nurse • Co-Founder</p>
-                <ul class="space-y-4 text-zinc-300 text-md">
-                    <li><span class="gold mr-3">■</span> Registered Nurse (RN)</li>
-                    <li><span class="gold mr-3">■</span> OSHA / BBP Certified</li>
-                    <li><span class="gold mr-3">■</span> HIPAA-Conscious Handling</li>
-                    <li><span class="gold mr-3">■</span> Solid Driving History</li>
+    <section class="py-24 bg-black px-6 text-center">
+        <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-16">
+            <div>
+                <h4 class="text-[#D4AF37] font-bold uppercase tracking-widest mb-6">Operational Standards</h4>
+                <ul class="text-zinc-400 space-y-2 text-sm">
+                    <li>Secure & Confidential Transport</li>
+                    <li>Professional Medical Background</li>
+                    <li>Detailed Documentation Protocols</li>
+                    <li>Reliable Same-Day & Scheduled Options</li>
                 </ul>
             </div>
-            
+            <div>
+                <h4 class="text-[#D4AF37] font-bold uppercase tracking-widest mb-6">Service Area</h4>
+                <ul class="text-zinc-400 space-y-2 text-sm">
+                    <li>RTP (Research Triangle Park)</li>
+                    <li>Durham, North Carolina</li>
+                    <li>Wake, Orange, & Surrounding Counties</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 px-6 max-w-6xl mx-auto border-t border-zinc-900">
+        <div class="text-center mb-20">
+            <p class="text-2xl md:text-3xl italic text-[#D4AF37] mb-4">"30+ Years in the Medical Field"</p>
+            <h3 class="text-4xl font-bold uppercase tracking-widest">The Founders</h3>
+            <p class="mt-6 text-zinc-500 max-w-2xl mx-auto italic leading-relaxed">Founded by a mother and son, our business is built on a shared commitment to providing the Durham professional community with the highest standard of custodial integrity.</p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-12 text-left">
+            <div class="bg-zinc-900 p-12 rounded-3xl border border-zinc-800 shadow-2xl">
+                <h4 class="text-3xl font-bold mb-1 uppercase tracking-tight">Kathy Ellison</h4>
+                <p class="stat-brand uppercase text-xs tracking-widest mb-8 font-bold italic">Mother • Registered Nurse • Co-Founder</p>
+                <ul class="space-y-4 text-zinc-300 text-md leading-none">
+                    <li><span class="text-[#D4AF37] mr-3">■</span> Registered Nurse (RN)</li>
+                    <li><span class="text-[#D4AF37] mr-3">■</span> OSHA / BBP Certified</li>
+                    <li><span class="text-[#D4AF37] mr-3">■</span> HIPAA-Conscious Handling</li>
+                    <li><span class="text-[#D4AF37] mr-3">■</span> Solid Driving History</li>
+                </ul>
+            </div>
+            <div class="bg-zinc-900 p-12 rounded-3xl border border-zinc-800 shadow-2xl">
+                <h4 class="text-3xl font-bold mb-1 uppercase tracking-tight">Karson Ellison</h4>
+                <p class="stat-brand uppercase text-xs tracking-widest mb-8 font-bold italic">Son • Certified Med Tech • Co-Founder</p>
+                <ul class="space-y-4 text-zinc-300 text-md leading-none">
+                    <li><span class="text-[#D4AF37] mr-3">■</span> Certified Med Tech (CMT)</li>
+                    <li><span class="text-[#D4AF37] mr-3">■</span> OSHA / BBP Certified</li>
+                    <li><span class="text-[#D4AF37] mr-3">■</span> Mission-Critical Dispatch</li>
+                    <li><span class="text-[#D4AF37] mr-3">■</span> Solid Driving History</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-24 bg-black text-center px-6 border-t border-zinc-900">
+        <h2 class="text-2xl font-bold mb-12 uppercase tracking-widest leading-tight">
+            <span class="stat-brand">STAT</span> LOGISTICS & FREIGHT
+        </h2>
+        <div class="max-w-xs mx-auto">
+            <a href="tel:9198054450" class="gold-bg block w-full py-6 rounded-2xl font-black text-3xl shadow-2xl transition hover:scale-105 active:scale-95">(919) 805-4450</a>
+        </div>
+        <div class="mt-16 text-zinc-700 text-[10px] uppercase tracking-[0.5em] font-bold">Durham • Surrounding Counties • Family Founded & Operated</div>
+    </footer>
+
+</body>
+</html>
