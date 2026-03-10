@@ -15,14 +15,15 @@
             font-weight: 900;
             letter-spacing: -0.02em;
             text-transform: uppercase;
-            line-height: 1.2;
+            line-height: 1.1;
         }
         
-        /* Gold and Italicized Branding */
-        .stat-brand { font-style: italic; color: var(--gold); font-weight: 400; }
-
-        /* Space between STAT and Logistics */
-        .brand-gap { margin-right: 25px; }
+        /* Gold and Italicized Branding - Made Bold/Big to match */
+        .stat-brand { 
+            font-style: italic; 
+            color: var(--gold); 
+            font-weight: 900; /* Made this 900 to match the rest of the header */
+        }
 
         /* Gold Shimmer Buttons */
         .gold-bg { 
@@ -55,7 +56,7 @@
         }
 
         /* Spacing for the exclamation mark */
-        .exclamation-space { margin-left: 12px; }
+        .exclamation-space { margin-left: 8px; }
     </style>
 </head>
 <body>
@@ -66,10 +67,10 @@
         </p>
     </div>
 
-    <div class="py-12 bg-black text-center">
+    <div class="py-14 bg-black text-center">
         <div class="max-w-7xl mx-auto px-4">
             <h1 class="main-brand-header text-4xl md:text-7xl lg:text-8xl">
-                <span class="stat-brand brand-gap">STAT</span> LOGISTICS & <br class="hidden md:block"> FREIGHT
+                <span class="stat-brand">STAT</span> LOGISTICS & <br class="hidden md:block"> FREIGHT
             </h1>
         </div>
     </div>
@@ -168,7 +169,7 @@
 
     <footer class="py-24 bg-black text-center px-6 border-t border-zinc-900">
         <h2 class="text-2xl font-bold mb-12 uppercase tracking-widest leading-tight">
-            <span class="stat-brand brand-gap">STAT</span> LOGISTICS & FREIGHT
+            <span class="stat-brand">STAT</span> LOGISTICS & FREIGHT
         </h2>
         
         <div class="max-w-xs mx-auto">
