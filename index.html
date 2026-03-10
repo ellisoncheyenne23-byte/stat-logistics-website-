@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+                <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,7 +12,6 @@
         .serif { font-family: 'Playfair Display', serif; }
         .stat-italic { font-style: italic; color: var(--gold); }
         
-        /* High-Flash Gold Shimmer for Buttons */
         .gold-bg { 
             background: linear-gradient(45deg, #D4AF37, #FBF5B7, #AA771C, #FBF5B7); 
             background-size: 200% 200%;
@@ -42,7 +41,7 @@
             backdrop-filter: blur(10px);
             transition: all 0.3s ease;
         }
-        .sector-card:hover { transform: translateY(-10px); background: rgba(255, 255, 255, 0.07); }
+        .sector-card:hover { transform: translateY(-5px); background: rgba(255, 255, 255, 0.07); }
     </style>
 </head>
 <body>
@@ -72,9 +71,9 @@
                 MISSION READY. <span class="gold text-not-italic">STAT.</span>
             </h1>
             
-            <div class="max-w-4xl mx-auto mb-12">
-                <p class="text-xl md:text-2xl text-zinc-300 font-light leading-relaxed">
-                    <span class="font-bold text-white italic">STAT</span> Logistics & Freight provides high-level courier services engineered for the most demanding professional environments. From life-critical medical transport to confidential legal and corporate assets, we prioritize absolute chain of custody and time-sensitive precision.
+            <div class="max-w-4xl mx-auto mb-12 text-zinc-300">
+                <p class="text-xl md:text-2xl font-light leading-relaxed">
+                    <span class="font-bold text-white italic">STAT</span> Logistics & Freight provides professional courier services for high-stakes environments. From critical medical transport to confidential government and corporate assets, we prioritize time-sensitive precision.
                 </p>
             </div>
 
@@ -85,26 +84,47 @@
     </header>
 
     <section class="py-24 bg-zinc-950 px-6 border-y border-zinc-800">
-        <div class="max-w-7xl mx-auto text-center">
-            <h2 class="text-sm gold font-bold tracking-[0.6em] uppercase mb-16">Comprehensive Service Divisions</h2>
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-sm gold font-bold tracking-[0.6em] uppercase mb-16 text-center">Courier Service Divisions</h2>
+            
             <div class="grid md:grid-cols-2 gap-10">
-                <div class="sector-card p-10 rounded-xl text-left">
-                    <h3 class="text-2xl font-bold mb-4 gold serif italic tracking-tight uppercase">Medical Transport</h3>
-                    <ul class="space-y-3 text-zinc-400 text-sm">
-                        <li>• BBP / OSHA / HIPAA-Conscious Handling</li>
-                        <li>• Lab & Specimen Delivery</li>
-                        <li>• Pharmaceutical & Medical Equipment</li>
-                        <li>• Scheduled & STAT Clinical Runs</li>
+                <div class="sector-card p-12 rounded-xl">
+                    <h3 class="text-3xl font-bold mb-8 gold serif italic tracking-tight uppercase border-b border-zinc-800 pb-4">Medical Transport</h3>
+                    <ul class="space-y-4 text-zinc-300 text-md">
+                        <li class="flex items-start"><span class="gold mr-3">✔</span> BBP / OSHA / HIPAA-Conscious Handling</li>
+                        <li class="flex items-start"><span class="gold mr-3">✔</span> Lab & Specimen Diagnostic Delivery</li>
+                        <li class="flex items-start"><span class="gold mr-3">✔</span> Pharmaceutical & Surgical Equipment</li>
+                        <li class="flex items-start"><span class="gold mr-3">✔</span> Dedicated Chain of Custody Documentation</li>
+                        <li class="flex items-start"><span class="gold mr-3">✔</span> Scheduled Routes & Emergency STAT Runs</li>
+                        <li class="flex items-start italic text-zinc-500 text-sm mt-4">Serving hospitals, clinics, and laboratory systems.</li>
                     </ul>
                 </div>
-                <div class="sector-card p-10 rounded-xl text-left">
-                    <h3 class="text-2xl font-bold mb-4 gold serif italic tracking-tight uppercase">Commercial & Government</h3>
-                    <ul class="space-y-3 text-zinc-400 text-sm">
-                        <li>• Legal & Court Document Delivery</li>
-                        <li>• Interoffice & Agency Mail Routes</li>
-                        <li>• Time-Sensitive Secure Freight</li>
-                        <li>• Privacy & Discretion Focused</li>
+
+                <div class="sector-card p-12 rounded-xl">
+                    <h3 class="text-3xl font-bold mb-8 gold serif italic tracking-tight uppercase border-b border-zinc-800 pb-4">Commercial & Government</h3>
+                    <ul class="space-y-4 text-zinc-300 text-md">
+                        <li class="flex items-start"><span class="gold mr-3">✔</span> Legal & Court Document Filing</li>
+                        <li class="flex items-start"><span class="gold mr-3">✔</span> Interoffice & Multi-Agency Mail Routes</li>
+                        <li class="flex items-start"><span class="gold mr-3">✔</span> Government Office Asset Transfers</li>
+                        <li class="flex items-start"><span class="gold mr-3">✔</span> Secure Business Freight & Logistics</li>
+                        <li class="flex items-start"><span class="gold mr-3">✔</span> Privacy & Discretion Focused Logistics</li>
+                        <li class="flex items-start italic text-zinc-500 text-sm mt-4">Serving law firms, municipalities, and corporate offices.</li>
                     </ul>
+                </div>
+            </div>
+
+            <div class="mt-16 grid md:grid-cols-3 gap-8 text-center border-t border-zinc-900 pt-16">
+                <div>
+                    <h4 class="gold text-xs font-bold uppercase tracking-widest mb-2">Secure Transit</h4>
+                    <p class="text-zinc-500 text-xs">Total confidentiality for every pickup.</p>
+                </div>
+                <div>
+                    <h4 class="gold text-xs font-bold uppercase tracking-widest mb-2">Professional Background</h4>
+                    <p class="text-zinc-500 text-xs">Governed by medical-grade standards.</p>
+                </div>
+                <div>
+                    <h4 class="gold text-xs font-bold uppercase tracking-widest mb-2">Reliable Speed</h4>
+                    <p class="text-zinc-500 text-xs">Same-day and scheduled options available.</p>
                 </div>
             </div>
         </div>
@@ -118,23 +138,23 @@
         </div>
         
         <div class="grid md:grid-cols-2 gap-12">
-            <div class="bg-zinc-900 p-12 rounded-3xl border border-zinc-800 shadow-2xl transition hover:border-gold/40">
-                <h3 class="text-3xl font-bold mb-1 uppercase tracking-tight">Kathy Ellison</h3>
-                <p class="stat-italic uppercase text-xs tracking-widest mb-10 font-bold italic">Mother • Registered Nurse • Co-Founder</p>
-                <ul class="space-y-4 text-zinc-300 text-md font-light">
+            <div class="bg-zinc-900 p-12 rounded-3xl border border-zinc-800 shadow-2xl">
+                <h3 class="text-3xl font-bold mb-1 uppercase tracking-tight text-white">Kathy Ellison</h3>
+                <p class="stat-italic uppercase text-xs tracking-widest mb-8 font-bold italic">Mother • Registered Nurse • Co-Founder</p>
+                <ul class="space-y-4 text-zinc-300 text-md">
                     <li><span class="gold mr-3">■</span> Registered Nurse (RN)</li>
-                    <li><span class="gold mr-3">■</span> OSHA Certified</li>
-                    <li><span class="gold mr-3">■</span> Blood Borne Pathogen Certified</li>
+                    <li><span class="gold mr-3">■</span> OSHA / BBP Certified</li>
+                    <li><span class="gold mr-3">■</span> HIPAA-Conscious Handling</li>
                     <li><span class="gold mr-3">■</span> Solid Driving History</li>
                 </ul>
             </div>
-            <div class="bg-zinc-900 p-12 rounded-3xl border border-zinc-800 shadow-2xl transition hover:border-gold/40">
-                <h3 class="text-3xl font-bold mb-1 uppercase tracking-tight">Karson Ellison</h3>
-                <p class="stat-italic uppercase text-xs tracking-widest mb-10 font-bold italic">Son • Certified Med Tech • Co-Founder</p>
-                <ul class="space-y-4 text-zinc-300 text-md font-light">
+            <div class="bg-zinc-900 p-12 rounded-3xl border border-zinc-800 shadow-2xl">
+                <h3 class="text-3xl font-bold mb-1 uppercase tracking-tight text-white">Karson Ellison</h3>
+                <p class="stat-italic uppercase text-xs tracking-widest mb-8 font-bold italic">Son • Certified Med Tech • Co-Founder</p>
+                <ul class="space-y-4 text-zinc-300 text-md">
                     <li><span class="gold mr-3">■</span> Certified Med Tech (CMT)</li>
-                    <li><span class="gold mr-3">■</span> OSHA Certified</li>
-                    <li><span class="gold mr-3">■</span> Blood Borne Pathogen Certified</li>
+                    <li><span class="gold mr-3">■</span> OSHA / BBP Certified</li>
+                    <li><span class="gold mr-3">■</span> Mission-Critical Dispatch</li>
                     <li><span class="gold mr-3">■</span> Solid Driving History</li>
                 </ul>
             </div>
