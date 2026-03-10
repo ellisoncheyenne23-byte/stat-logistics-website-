@@ -12,7 +12,7 @@
         }
         body { font-family: 'Inter', sans-serif; background-color: #000000; color: #ffffff; line-height: 1.8; }
         
-        /* The Identity Header - Adjusted for full visibility */
+        /* The Identity Header */
         .main-brand-header {
             font-weight: 900;
             letter-spacing: -0.01em;
@@ -20,7 +20,7 @@
             line-height: 1.2;
         }
         
-        /* Gold Textured STAT - Added padding-right to prevent clipping */
+        /* Gold Textured STAT */
         .stat-brand { 
             font-style: italic; 
             font-weight: 900;
@@ -29,7 +29,7 @@
             -webkit-text-fill-color: transparent;
             background-clip: text;
             display: inline-block;
-            padding-right: 0.15em; /* This ensures the last T is fully visible */
+            padding-right: 0.1em; /* Adjusted to keep T visible but tighten gap */
         }
 
         /* Gold Shimmer Buttons */
@@ -62,7 +62,8 @@
             backdrop-filter: blur(10px);
         }
 
-        .exclamation-space { margin-left: 10px; }
+        /* Natural 1-space gap for the exclamation mark */
+        .exclamation-tight { margin-left: 0.25em; }
     </style>
 </head>
 <body>
@@ -97,7 +98,7 @@
             <img src="Screenshot_20260310-080705_Photos~2.png" alt="STAT Logistics Profile" class="header-image mb-16">
             
             <h2 class="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-8">
-                MISSION READY - <span class="stat-brand">STAT</span><span class="stat-brand exclamation-space">!</span>
+                MISSION READY - <span class="stat-brand">STAT</span><span class="stat-brand exclamation-tight">!</span>
             </h2>
             
             <div class="max-w-4xl mx-auto mb-12 text-zinc-300">
