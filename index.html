@@ -1,24 +1,25 @@
- <!DOCTYPE html>
+       <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STAT Logistics & Freight | Medical & Commercial Courier Durham</title>
+    <title>STAT Logistics & Freight | Medical & Commercial Courier</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
-        :root { --gold: #D4AF37; --deep-gold: #B8860B; --silver: #C0C0C0; }
+        :root { --gold: #D4AF37; --deep-gold: #B8860B; }
         body { font-family: 'Inter', sans-serif; background-color: #050505; color: #ffffff; scroll-behavior: smooth; }
         .serif { font-family: 'Playfair Display', serif; }
+        .stat-italic { font-style: italic; }
         
-        /* Premium Gradient Text */
+        /* Premium Metallic Gold Text */
         .gold-gradient {
             background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #fbf5b7, #AA771C);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
-        /* High-Impact Pulsing Button */
+        /* High-Impact CTA */
         .btn-gold {
             background: linear-gradient(45deg, var(--deep-gold), var(--gold));
             color: black;
@@ -28,10 +29,10 @@
         }
         .btn-gold:hover {
             transform: scale(1.05);
-            box-shadow: 0 0 25px rgba(212, 175, 55, 0.6);
+            box-shadow: 0 0 30px rgba(212, 175, 55, 0.6);
         }
 
-        .pulse-animation { animation: pulse-shadow 2s infinite; }
+        .pulse-animation { animation: pulse-shadow 2.5s infinite; }
         @keyframes pulse-shadow {
             0% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.7); }
             70% { box-shadow: 0 0 0 15px rgba(212, 175, 55, 0); }
@@ -39,149 +40,137 @@
         }
 
         .glass-card {
-            background: rgba(255, 255, 255, 0.03);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(212, 175, 55, 0.1);
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(212, 175, 55, 0.15);
         }
 
-        /* Digital Wallet Card Styling */
         .wallet-card {
             background: linear-gradient(135deg, #111 0%, #000 100%);
             border: 2px solid var(--gold);
             border-radius: 20px;
-            position: relative;
-            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.8);
         }
     </style>
 </head>
 <body>
 
-    <nav class="fixed top-0 w-full z-50 glass-card border-b border-zinc-800 py-4 px-6">
+    <nav class="fixed top-0 w-full z-50 glass-card py-4 px-6">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <div class="text-2xl md:text-3xl font-extrabold serif tracking-tighter gold-gradient uppercase">STAT</div>
-            <a href="tel:9198054450" class="btn-gold pulse-animation px-6 py-2 rounded-full text-sm uppercase tracking-tighter">
-                Schedule STAT Pickup
+            <div class="text-2xl md:text-3xl font-extrabold serif gold-gradient uppercase">
+                <span class="stat-italic">STAT</span> LOGISTICS
+            </div>
+            <a href="tel:9198054450" class="btn-gold pulse-animation px-6 py-2 rounded-lg text-sm uppercase tracking-widest">
+                Call (919) 805-4450
             </a>
         </div>
     </nav>
 
     <section class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-20">
-        <div class="inline-block border border-gold px-4 py-1 rounded-full text-xs font-bold gold tracking-[0.4em] mb-6 uppercase bg-zinc-900">
+        <div class="inline-block border border-gold/40 px-5 py-1 rounded-full text-xs font-bold gold-gradient tracking-[0.5em] mb-8 uppercase bg-zinc-900/50">
             Durham • RTP • North Carolina
         </div>
-        <h1 class="text-5xl md:text-8xl serif mb-8 leading-tight">
-            Elite <span class="gold-gradient">Courier</span> <br> Solutions
+        <h1 class="text-5xl md:text-8xl serif mb-8 leading-tight gold-gradient">
+            <span class="stat-italic">STAT</span> Logistics <br>& Freight
         </h1>
         <p class="text-xl md:text-2xl text-zinc-400 max-w-3xl mx-auto font-light mb-12">
-            Professional medical and commercial transport for when "standard delivery" isn't enough. We specialize in mission-critical compliance.
+            Providing high-level medical courier services designed to meet hospital, laboratory, and clinical compliance standards. 
         </p>
         <div class="flex flex-col md:flex-row gap-6">
-            <a href="tel:9198054450" class="btn-gold px-12 py-5 rounded-xl text-xl shadow-2xl">Call (919) 805-4450</a>
-            <a href="#about" class="px-12 py-5 rounded-xl border border-zinc-700 font-bold hover:bg-zinc-900 transition">Meet The Owners</a>
+            <a href="tel:9198054450" class="btn-gold px-14 py-6 rounded-xl text-xl shadow-2xl uppercase tracking-widest">Schedule Pickup</a>
+            <a href="#about" class="px-14 py-6 rounded-xl border border-zinc-700 font-bold hover:bg-zinc-900 transition uppercase tracking-widest text-sm flex items-center justify-center">
+                Our Credentials
+            </a>
         </div>
     </section>
 
-    <section class="py-24 px-6 bg-[#080808]">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-center gold-gradient serif text-4xl mb-16 uppercase tracking-widest">Core Capabilities</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="glass-card p-10 rounded-2xl border-t-4 border-yellow-600">
-                    <div class="text-4xl mb-6">🩺</div>
-                    <h3 class="text-2xl font-bold mb-4 serif">Medical Transport</h3>
-                    <p class="text-zinc-500 mb-6">HIPAA-conscious handling of labs, specimens, and medical equipment.</p>
-                    <ul class="text-sm space-y-2 silver-text font-semibold uppercase tracking-tighter">
-                        <li>✓ Chain of Custody</li>
-                        <li>✓ Pharmaceutical Runs</li>
-                        <li>✓ Clinical Compliance</li>
+    <section class="py-24 px-6 bg-[#030303] border-t border-zinc-900">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="gold-gradient serif text-4xl mb-16 uppercase tracking-[0.2em]">Service Divisions</h2>
+            <div class="grid md:grid-cols-2 gap-10 text-left">
+                <div class="glass-card p-12 rounded-3xl border-t-8 border-yellow-600">
+                    <h3 class="text-3xl font-bold mb-6 serif uppercase"><span class="stat-italic">STAT</span> Medical</h3>
+                    <ul class="space-y-4 text-lg text-zinc-300 font-light">
+                        <li class="flex items-center"><span class="gold mr-3">✓</span> HIPAA-Conscious Handling</li>
+                        <li class="flex items-center"><span class="gold mr-3">✓</span> Lab & Specimen Delivery</li>
+                        <li class="flex items-center"><span class="gold mr-3">✓</span> Pharmaceutical Equipment</li>
+                        <li class="flex items-center"><span class="gold mr-3">✓</span> Chain of Custody Protocols</li>
                     </ul>
                 </div>
-                <div class="glass-card p-10 rounded-2xl border-t-4 border-zinc-500">
-                    <div class="text-4xl mb-6">⚖️</div>
-                    <h3 class="text-2xl font-bold mb-4 serif">Legal & Gov</h3>
-                    <p class="text-zinc-500 mb-6">Secure delivery of court documents, interoffice routes, and sensitive freight.</p>
-                    <ul class="text-sm space-y-2 silver-text font-semibold uppercase tracking-tighter">
-                        <li>✓ Signature Required</li>
-                        <li>✓ Secure Logistics</li>
-                        <li>✓ Time-Sensitive Freight</li>
-                    </ul>
-                </div>
-                <div class="glass-card p-10 rounded-2xl border-t-4 border-yellow-800">
-                    <div class="text-4xl mb-6">⚡</div>
-                    <h3 class="text-2xl font-bold mb-4 serif">STAT Delivery</h3>
-                    <p class="text-zinc-500 mb-6">Immediate, on-demand courier services for emergency requirements.</p>
-                    <ul class="text-sm space-y-2 silver-text font-semibold uppercase tracking-tighter">
-                        <li>✓ Priority Dispatch</li>
-                        <li>✓ Real-Time Updates</li>
-                        <li>✓ Guaranteed Window</li>
+                <div class="glass-card p-12 rounded-3xl border-t-8 border-zinc-500">
+                    <h3 class="text-3xl font-bold mb-6 serif uppercase">Commercial & Gov</h3>
+                    <ul class="space-y-4 text-lg text-zinc-300 font-light">
+                        <li class="flex items-center"><span class="gold mr-3">✓</span> Legal & Court Document Delivery</li>
+                        <li class="flex items-center"><span class="gold mr-3">✓</span> Interoffice & Agency Routes</li>
+                        <li class="flex items-center"><span class="gold mr-3">✓</span> Time-Sensitive Freight</li>
+                        <li class="flex items-center"><span class="gold mr-3">✓</span> Secure Business Logistics</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="py-24 px-6">
-        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-16">
-            <div class="md:w-1/2">
-                <h2 class="text-4xl serif mb-6">Professional <br><span class="gold-gradient">Foundation</span></h2>
-                <p class="text-zinc-400 text-lg mb-8 leading-relaxed">
-                    With over 30 years in the medical field, the owners of STAT Logistics & Freight bring a deep understanding of clinical necessity. We don't just deliver packages; we manage the integrity of your mission-critical items.
-                </p>
-                <div class="space-y-6">
-                    <div class="flex items-start gap-4">
-                        <div class="bg-zinc-900 p-3 rounded-lg border border-yellow-900 gold font-bold">RN</div>
-                        <div>
-                            <h4 class="font-bold">Kathy Ellison</h4>
-                            <p class="text-sm text-zinc-500 uppercase tracking-widest">30+ Years Registered Nurse</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start gap-4">
-                        <div class="bg-zinc-900 p-3 rounded-lg border border-yellow-900 gold font-bold">CMT</div>
-                        <div>
-                            <h4 class="font-bold">Karson Ellison</h4>
-                            <p class="text-sm text-zinc-500 uppercase tracking-widest">Certified Med Tech & Logistics Specialist</p>
-                        </div>
-                    </div>
-                </div>
+    <section id="about" class="py-24 px-6 max-w-6xl mx-auto border-t border-zinc-900">
+        <div class="text-center mb-20">
+            <h2 class="text-4xl md:text-5xl serif mb-6 gold-gradient uppercase tracking-widest">About The Owners</h2>
+            <p class="text-zinc-500 text-xl max-w-2xl mx-auto font-light italic">
+                "30+ Years experience in the medical field ensures your delivery is handled with clinical precision."
+            </p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-12">
+            <div class="p-10 bg-zinc-950 rounded-3xl border border-zinc-800 text-center">
+                <div class="w-20 h-20 bg-zinc-900 border border-gold/30 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-black gold">RN</div>
+                <h3 class="text-3xl font-bold mb-2">Kathy Ellison</h3>
+                <p class="gold-gradient uppercase text-xs tracking-[0.3em] font-bold mb-6 italic">Registered Nurse</p>
+                <p class="text-zinc-400 leading-relaxed">Expert in healthcare compliance, clinical safety, and professional medical handling protocols.</p>
             </div>
-            <div class="md:w-1/2 w-full glass-card p-4 rounded-3xl">
-                <img src="https://i.ibb.co/Vp6Yj2Y/stat-logistics-flyer.png" alt="STAT Logistics Owners" class="rounded-2xl w-full shadow-2xl grayscale hover:grayscale-0 transition duration-700">
+            <div class="p-10 bg-zinc-950 rounded-3xl border border-zinc-800 text-center">
+                <div class="w-20 h-20 bg-zinc-900 border border-gold/30 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-black gold">MT</div>
+                <h3 class="text-3xl font-bold mb-2">Karson Ellison</h3>
+                <p class="gold-gradient uppercase text-xs tracking-[0.3em] font-bold mb-6 italic">Certified Med Tech</p>
+                <p class="text-zinc-400 leading-relaxed">Specializing in secure logistics, OSHA-certified transport, and time-critical operational efficiency.</p>
             </div>
         </div>
     </section>
 
-    <section class="py-24 bg-[#0a0a0a] border-t border-zinc-900 px-6">
+    <section class="py-24 bg-zinc-950 px-6 border-t border-zinc-900">
         <div class="max-w-md mx-auto">
-            <p class="text-center text-zinc-600 text-xs uppercase tracking-[0.3em] mb-8">Tap to call or save</p>
-            <div class="wallet-card p-8 card-shadow">
-                <div class="flex justify-between items-start mb-12">
-                    <div class="serif text-2xl font-bold gold-gradient italic">STAT</div>
-                    <div class="text-[10px] text-zinc-500 border border-zinc-800 px-2 py-1 rounded">MEMBER: 2026</div>
+            <p class="text-center text-zinc-600 text-[10px] uppercase tracking-[0.5em] mb-10">Digital Contact ID</p>
+            <div class="wallet-card p-10 relative group hover:scale-105 transition duration-500">
+                <div class="flex justify-between items-start mb-16">
+                    <div>
+                        <div class="serif text-3xl font-black gold-gradient tracking-tighter uppercase leading-none">
+                            <span class="stat-italic">STAT</span><br>LOGISTICS
+                        </div>
+                        <p class="text-[9px] text-zinc-500 mt-2 tracking-widest uppercase">Courier & Freight Solutions</p>
+                    </div>
+                    <div class="text-[10px] gold border border-gold/20 px-3 py-1 rounded-full font-bold">NC-2026</div>
                 </div>
                 
-                <div class="mb-8">
-                    <div class="text-xs text-zinc-500 uppercase tracking-widest mb-1">Service Dispatch</div>
-                    <a href="tel:9198054450" class="text-3xl font-black tracking-tighter gold-gradient">(919) 805-4450</a>
+                <div class="mb-12">
+                    <p class="text-[10px] text-zinc-600 uppercase tracking-widest mb-2">Direct Dispatch</p>
+                    <a href="tel:9198054450" class="text-4xl font-black tracking-tighter gold-gradient hover:brightness-125 transition">
+                        (919) 805-4450
+                    </a>
                 </div>
 
-                <div class="flex justify-between items-end">
-                    <div>
-                        <p class="text-[10px] text-zinc-500 uppercase mb-1">Serving</p>
-                        <p class="text-sm font-bold silver-text uppercase tracking-widest">Durham • Raleigh • RTP</p>
-                    </div>
-                    <div class="w-12 h-12 bg-zinc-900 rounded-full flex items-center justify-center border border-zinc-800">
-                        <span class="gold">✓</span>
+                <div class="flex justify-between items-center border-t border-zinc-800 pt-6">
+                    <p class="text-[10px] text-zinc-500 uppercase tracking-widest leading-tight">
+                        Durham • RTP<br>Surrounding Counties
+                    </p>
+                    <div class="w-10 h-10 gold-bg rounded-full flex items-center justify-center font-black">
+                        →
                     </div>
                 </div>
             </div>
-            <p class="text-center mt-12 text-zinc-700 text-xs italic font-light">"Dependable. Compliant. Mission-Ready."</p>
         </div>
     </section>
 
-    <footer class="py-12 px-6 text-center border-t border-zinc-900">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-            <div class="serif gold font-bold text-xl uppercase">STAT Logistics & Freight</div>
-            <div class="text-zinc-600 text-xs tracking-[0.3em]">© 2026 ELLISON FAMILY VENTURE. ALL RIGHTS RESERVED.</div>
-            <a href="tel:9198054450" class="silver-text hover:gold transition">(919) 805-4450</a>
+    <footer class="py-16 px-6 text-center">
+        <p class="gold-gradient serif text-xl mb-4 font-bold uppercase tracking-widest"><span class="stat-italic">STAT</span> Logistics & Freight</p>
+        <p class="text-zinc-600 text-xs uppercase tracking-[0.4em]">Dependable • Compliant • Mission-Ready</p>
+        <div class="mt-10 pt-10 border-t border-zinc-900 text-zinc-800 text-[10px] uppercase tracking-widest">
+            © 2026 ELLISON ENTERPRISES. Professional Logistics Solutions.
         </div>
     </footer>
 
