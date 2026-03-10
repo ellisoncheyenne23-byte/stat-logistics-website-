@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+            <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STAT Logistics, Freight & Courier | Elite Transport</title>
+    <title>STAT Logistics, Freight & Courier | Family Founded Elite Transport</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
@@ -12,12 +12,12 @@
         .serif { font-family: 'Playfair Display', serif; }
         .stat-italic { font-style: italic; color: var(--gold); }
         
-        /* Flashy Gold Foil Gradient for Buttons and Text */
+        /* High-Flash Gold Shimmer */
         .gold-bg { 
             background: linear-gradient(45deg, #D4AF37, #FBF5B7, #AA771C, #FBF5B7); 
             background-size: 200% 200%;
             color: #000; 
-            animation: shimmer 4s infinite linear;
+            animation: shimmer 3s infinite linear;
         }
         @keyframes shimmer {
             0% { background-position: 0% 50%; }
@@ -25,37 +25,29 @@
             100% { background-position: 0% 50%; }
         }
 
-        /* Large Header Image Styling */
         .header-image {
             width: 100%;
-            max-width: 1100px;
+            max-width: 1050px;
             height: auto;
             margin: 0 auto;
             display: block;
             border: 2px solid #D4AF37;
             border-radius: 4px;
-            box-shadow: 0 0 50px rgba(212, 175, 55, 0.3);
+            box-shadow: 0 0 60px rgba(212, 175, 55, 0.3);
         }
 
-        /* Stylized Blockquote */
-        .quote-container {
-            font-family: 'Playfair Display', serif;
-            font-style: italic;
-            color: var(--gold);
-            font-size: 2.5rem;
-            position: relative;
-            display: inline-block;
-            padding: 0 40px;
+        .founder-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            backdrop-filter: blur(10px);
         }
-        .quote-container::before { content: '“'; position: absolute; left: 0; top: -10px; font-size: 60px; opacity: 0.5; }
-        .quote-container::after { content: '”'; position: absolute; right: 0; bottom: -30px; font-size: 60px; opacity: 0.5; }
     </style>
 </head>
 <body>
 
     <div class="bg-zinc-900 py-4 text-center border-b border-zinc-800">
         <p class="text-[10px] font-bold text-[#D4AF37] uppercase tracking-[0.5em]">
-            Durham • Surrounding Counties • Mission-Ready Logistics
+            Durham • Surrounding Counties • Family Founded & Operated
         </p>
     </div>
 
@@ -64,7 +56,7 @@
             <div class="text-2xl md:text-3xl font-black serif uppercase tracking-tighter">
                 <span class="stat-italic">STAT</span> LOGISTICS
             </div>
-            <a href="tel:9198054450" class="gold-bg px-8 py-2 rounded-lg font-black text-xs uppercase tracking-widest shadow-lg">
+            <a href="tel:9198054450" class="gold-bg px-8 py-2 rounded-lg font-black text-xs uppercase tracking-widest shadow-xl">
                 DISPATCH NOW
             </a>
         </div>
@@ -72,7 +64,7 @@
 
     <header class="py-20 px-6 text-center">
         <div class="max-w-7xl mx-auto">
-            <img src="Screenshot_20260310-080705_Photos~2.png" alt="STAT Logistics Flyer" class="header-image mb-16">
+            <img src="Screenshot_20260310-080705_Photos~2.png" alt="STAT Logistics Profile" class="header-image mb-16">
             
             <h1 class="text-5xl md:text-8xl font-black serif mb-8 uppercase tracking-tighter italic leading-none">
                 MISSION READY. <span class="gold text-not-italic">STAT.</span>
@@ -80,7 +72,7 @@
             
             <div class="max-w-4xl mx-auto mb-12">
                 <p class="text-xl md:text-2xl text-zinc-300 font-light leading-relaxed">
-                    <span class="font-bold text-white italic">STAT</span> Logistics & Freight provides high-level medical courier services designed to meet hospital, laboratory, and clinical compliance standards. Our operations prioritize chain of custody, HIPAA awareness, and time-sensitive delivery protocols.
+                    <span class="font-bold text-white italic">STAT</span> Logistics & Freight provides high-level medical courier services designed to meet hospital, laboratory, and clinical compliance standards. 
                 </p>
             </div>
 
@@ -92,10 +84,8 @@
 
     <section class="py-24 bg-zinc-950 px-6 border-y border-zinc-900 text-center">
         <div class="max-w-4xl mx-auto">
-            <h2 class="text-xs gold font-bold tracking-[0.6em] uppercase mb-10">A Mother & Son Partnership</h2>
-            <div class="quote-container mb-12">
-                30+ Years in the Medical Field
-            </div>
+            <h2 class="text-sm gold font-bold tracking-[0.6em] uppercase mb-8">A Mother & Son Partnership</h2>
+            <h3 class="text-3xl md:text-5xl serif mb-10 italic">Founded on <span class="gold">Trust & Medical Expertise.</span></h3>
             <p class="text-zinc-400 text-lg md:text-xl font-light leading-relaxed">
                 At <span class="stat-italic">STAT</span> Logistics, we aren't just a transport service; we are a family-owned medical courier service. Founded by a mother and son, our business is rooted in the values of personal accountability and a shared commitment to the Durham professional community.
             </p>
@@ -103,26 +93,31 @@
     </section>
 
     <section id="about" class="py-24 px-6 max-w-6xl mx-auto">
-        <h2 class="text-4xl serif font-bold text-center mb-20 gold uppercase tracking-widest">Leadership & Credentials</h2>
+        <div class="text-center mb-20">
+            <p class="text-2xl md:text-3xl serif italic gold mb-4">"30+ Years in the Medical Field"</p>
+            <h2 class="text-4xl font-bold uppercase tracking-widest">The Founders</h2>
+        </div>
         
-        <div class="grid md:grid-cols-2 gap-16">
-            <div class="p-12 bg-zinc-900 rounded-3xl border border-zinc-800 shadow-2xl">
-                <h3 class="text-3xl font-bold mb-1">Kathy Ellison</h3>
-                <p class="stat-italic uppercase text-xs tracking-widest mb-8 font-bold italic">Registered Nurse • Co-Founder</p>
-                <ul class="space-y-4 text-zinc-300 text-lg">
-                    <li><span class="gold mr-3">■</span> Registered Nurse</li>
+        <div class="grid md:grid-cols-2 gap-12">
+            <div class="founder-card p-12 rounded-3xl shadow-2xl transition hover:border-gold/40">
+                <h3 class="text-3xl font-bold mb-1 uppercase tracking-tight">Kathy Ellison</h3>
+                <p class="stat-italic uppercase text-xs tracking-widest mb-10 font-bold italic">Mother • Registered Nurse • Co-Founder</p>
+                <ul class="space-y-5 text-zinc-300 text-lg font-light">
+                    <li><span class="gold mr-3">■</span> Registered Nurse (RN)</li>
                     <li><span class="gold mr-3">■</span> OSHA Certified</li>
                     <li><span class="gold mr-3">■</span> Blood Borne Pathogen Certified</li>
+                    <li><span class="gold mr-3">■</span> HIPAA Protocol Specialist</li>
                     <li><span class="gold mr-3">■</span> Solid Driving History</li>
                 </ul>
             </div>
-            <div class="p-12 bg-zinc-900 rounded-3xl border border-zinc-800 shadow-2xl">
-                <h3 class="text-3xl font-bold mb-1">Karson Ellison</h3>
-                <p class="stat-italic uppercase text-xs tracking-widest mb-8 font-bold italic">Certified Med Tech • Co-Founder</p>
-                <ul class="space-y-4 text-zinc-300 text-lg">
+            <div class="founder-card p-12 rounded-3xl shadow-2xl transition hover:border-gold/40">
+                <h3 class="text-3xl font-bold mb-1 uppercase tracking-tight">Karson Ellison</h3>
+                <p class="stat-italic uppercase text-xs tracking-widest mb-10 font-bold italic">Son • Certified Med Tech • Co-Founder</p>
+                <ul class="space-y-5 text-zinc-300 text-lg font-light">
+                    <li><span class="gold mr-3">■</span> Certified Med Tech (CMT)</li>
                     <li><span class="gold mr-3">■</span> OSHA Certified</li>
                     <li><span class="gold mr-3">■</span> Blood Borne Pathogen Certified</li>
-                    <li><span class="gold mr-3">■</span> Certified Med Tech</li>
+                    <li><span class="gold mr-3">■</span> Logistics Operations Lead</li>
                     <li><span class="gold mr-3">■</span> Solid Driving History</li>
                 </ul>
             </div>
@@ -130,15 +125,17 @@
     </section>
 
     <footer class="py-24 bg-black text-center px-6 border-t border-zinc-900">
-        <h2 class="text-2xl font-bold serif mb-12 uppercase tracking-widest"><span class="stat-italic">STAT</span> Logistics, Freight & Courier</h2>
+        <h2 class="text-2xl font-bold serif mb-10 uppercase tracking-widest"><span class="stat-italic">STAT</span> Logistics, Freight & Courier</h2>
         <a href="tel:9198054450" class="gold-bg px-20 py-8 rounded-2xl font-black text-3xl inline-block shadow-2xl transition hover:scale-110">
             (919) 805-4450
         </a>
         <p class="mt-16 text-zinc-700 text-[10px] uppercase tracking-[0.5em] font-bold">
             Durham • Surrounding Counties • Family Owned & Operated
         </p>
+        <div class="mt-10 text-[9px] text-zinc-800 uppercase tracking-widest font-bold">
+            © 2026 STAT Logistics & Freight | Professional Family Courier Standards
+        </div>
     </footer>
 
 </body>
 </html>
-
