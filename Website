@@ -1,0 +1,16 @@
+import { Card, CardContent } from "@/components/ui/card"; import { Button } from "@/components/ui/button"; import { Phone, Truck, FileText, Shield } from "lucide-react";
+
+export default function StatLogisticsWebsite() { return ( <div className="min-h-screen bg-black text-white p-6 grid gap-8"> <header className="text-center space-y-4"> <h1 className="text-4xl font-bold text-yellow-400">STAT Logistics & Freight</h1> <p className="text-lg">Medical & Commercial Courier Services</p> <p>Durham, North Carolina</p> <Button className="text-lg px-6 py-4"> <Phone className="mr-2" /> Call (919) 805-4450 </Button> </header>
+
+<section className="grid md:grid-cols-2 gap-6">
+    <Card className="bg-zinc-900">
+      <CardContent className="p-6 space-y-4">
+        <h2 className="text-2xl text-yellow-400 font-semibold flex items-center gap-2">
+          <Truck /> Medical Transport Services
+        </h2>
+        <ul className="space-y-2">
+          <li>BBP / OSHA / HIPAA Conscious Handling</li>
+          <li>Lab & Specimen Delivery</li>
+          <li>Pharmaceutical & Medical Equipment Delivery</li>
+          <li>Chain of Custody Documentation</li>
+          <li>Time Critical Runs</
