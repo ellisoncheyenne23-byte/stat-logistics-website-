@@ -12,14 +12,7 @@
         }
         body { font-family: 'Inter', sans-serif; background-color: #000000; color: #ffffff; line-height: 1.8; }
         
-        .main-brand-header {
-            font-weight: 900;
-            letter-spacing: -0.01em;
-            text-transform: uppercase;
-            line-height: 1.2;
-        }
-        
-        /* Gold Textured STAT */
+        /* THE FIX: Added padding-right and overflow visible to ensure the italic 'T' is never cut */
         .stat-brand { 
             font-style: italic; 
             font-weight: 900;
@@ -28,10 +21,17 @@
             -webkit-text-fill-color: transparent;
             background-clip: text;
             display: inline-block;
-            padding-right: 0.05em; 
+            padding-right: 15px; /* Forced space to prevent the 'T' from clipping */
+            overflow: visible;
         }
 
-        /* High-Flash Gold Shimmer Buttons */
+        .main-brand-header {
+            font-weight: 900;
+            letter-spacing: -0.01em;
+            text-transform: uppercase;
+            line-height: 1.2;
+        }
+
         .gold-bg { 
             background: linear-gradient(45deg, #D4AF37, #FBF5B7, #AA771C, #FBF5B7); 
             background-size: 200% 200%;
@@ -61,8 +61,8 @@
             backdrop-filter: blur(10px);
         }
 
-        /* Ultra-tight exclamation spacing */
-        .exclamation-tight { margin-left: -0.05em; }
+        /* Tightening the gap for the mission ready slogan */
+        .exclamation-tight { margin-left: -10px; }
     </style>
 </head>
 <body>
@@ -191,3 +191,4 @@
 
 </body>
 </html>
+
