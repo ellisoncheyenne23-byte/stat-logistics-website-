@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -20,7 +20,7 @@
             line-height: 1.2;
         }
         
-        /* Gold Textured STAT - Added tiny letter spacing between S-T-A-T */
+        /* Textured Gold STAT - Tiny letter spacing + visibility protection */
         .stat-brand { 
             font-style: italic; 
             font-weight: 900;
@@ -29,12 +29,13 @@
             -webkit-text-fill-color: transparent;
             background-clip: text;
             display: inline-block;
-            letter-spacing: 0.05em; /* The tiny tiny space between the letters */
-            padding-right: 0.1em; /* Safety buffer for the italic T */
-            margin-right: -0.05em; /* Tightens the gap to the next word */
+            letter-spacing: 0.05em; 
+            padding-right: 0.1em; 
+            margin-right: -0.05em; 
             overflow: visible;
         }
 
+        /* High-Flash Gold Shimmer Buttons */
         .gold-bg { 
             background: linear-gradient(45deg, #D4AF37, #FBF5B7, #AA771C, #FBF5B7); 
             background-size: 200% 200%;
@@ -64,7 +65,7 @@
             backdrop-filter: blur(10px);
         }
 
-        /* Tightened exclamation for the mission ready slogan */
+        /* Tightened gold exclamation for slogan */
         .exclamation-tight { margin-left: -0.05em; }
     </style>
 </head>
@@ -97,7 +98,7 @@
 
     <header class="py-16 px-6 text-center">
         <div class="max-w-7xl mx-auto">
-            <img src="Screenshot_20260310-080705_Photos~2.png" alt="STAT Logistics Profile" class="header-image mb-16">
+            <img src="https://raw.githubusercontent.com/Chey-spellbound/Stat-Logistics/main/Screenshot_20260310-080705_Photos~2.png" alt="STAT Logistics Profile" class="header-image mb-16">
             
             <h2 class="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-8">
                 MISSION READY - <span class="stat-brand">STAT</span><span class="stat-brand exclamation-tight">!</span>
@@ -182,7 +183,7 @@
         </h2>
         
         <div class="max-w-xs mx-auto">
-            <a href="tel:9198054450" class="gold-bg block w-full py-6 rounded-2xl font-black text-3xl shadow-2xl transition hover:scale-105">
+            <a href="tel:9198054450" class="gold-bg block w-full py-6 rounded-2xl font-black text-3xl shadow-2xl transition hover:scale-105 active:scale-95">
                 (919) 805-4450
             </a>
         </div>
