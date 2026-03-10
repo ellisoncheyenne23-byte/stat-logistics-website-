@@ -9,19 +9,18 @@
     <style>
         :root { 
             --gold: #D4AF37; 
-            --gold-shimmer: radial-gradient(circle, #f9e1a1 0%, #D4AF37 40%, #AA771C 100%);
         }
         body { font-family: 'Inter', sans-serif; background-color: #000000; color: #ffffff; line-height: 1.8; }
         
-        /* The "First Thing You See" Branding */
+        /* The Identity Header - Adjusted for full visibility */
         .main-brand-header {
             font-weight: 900;
-            letter-spacing: -0.02em;
+            letter-spacing: -0.01em;
             text-transform: uppercase;
-            line-height: 1.1;
+            line-height: 1.2;
         }
         
-        /* Gold and Italicized Branding - Made Bold/Big to match, with shimmer applied to TEXT */
+        /* Gold Textured STAT - Added padding-right to prevent clipping */
         .stat-brand { 
             font-style: italic; 
             font-weight: 900;
@@ -29,7 +28,8 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            text-fill-color: transparent;
+            display: inline-block;
+            padding-right: 0.15em; /* This ensures the last T is fully visible */
         }
 
         /* Gold Shimmer Buttons */
@@ -62,15 +62,7 @@
             backdrop-filter: blur(10px);
         }
 
-        /* Spacing for the exclamation mark */
-        .exclamation-space { 
-            margin-left: 8px; 
-        }
-        
-        /* Apply text gradient to general gold-text if needed */
-        .gold-text {
-            color: var(--gold);
-        }
+        .exclamation-space { margin-left: 10px; }
     </style>
 </head>
 <body>
@@ -81,7 +73,7 @@
         </p>
     </div>
 
-    <div class="py-14 bg-black text-center">
+    <div class="py-16 bg-black text-center">
         <div class="max-w-7xl mx-auto px-4">
             <h1 class="main-brand-header text-4xl md:text-7xl lg:text-8xl">
                 <span class="stat-brand">STAT</span> LOGISTICS & <br class="hidden md:block"> FREIGHT
@@ -126,24 +118,24 @@
             
             <div class="grid md:grid-cols-2 gap-10">
                 <div class="sector-card p-12 rounded-xl">
-                    <h4 class="text-3xl font-bold mb-8 gold-text uppercase tracking-tight border-b border-zinc-800 pb-4 italic">Medical Transport</h4>
+                    <h4 class="text-3xl font-bold mb-8 gold uppercase tracking-tight border-b border-zinc-800 pb-4 italic">Medical Transport</h4>
                     <ul class="space-y-4 text-zinc-300 text-md">
-                        <li class="flex items-start"><span class="gold-text mr-3 font-bold">✔</span> BBP / OSHA / HIPAA-Conscious Handling</li>
-                        <li class="flex items-start"><span class="gold-text mr-3 font-bold">✔</span> Lab & Specimen Diagnostic Delivery</li>
-                        <li class="flex items-start"><span class="gold-text mr-3 font-bold">✔</span> Pharmaceutical & Surgical Equipment</li>
-                        <li class="flex items-start"><span class="gold-text mr-3 font-bold">✔</span> Dedicated Chain of Custody Documentation</li>
-                        <li class="flex items-start"><span class="gold-text mr-3 font-bold">✔</span> Scheduled Routes & Emergency STAT Runs</li>
+                        <li class="flex items-start"><span class="gold mr-3 font-bold">✔</span> BBP / OSHA / HIPAA-Conscious Handling</li>
+                        <li class="flex items-start"><span class="gold mr-3 font-bold">✔</span> Lab & Specimen Diagnostic Delivery</li>
+                        <li class="flex items-start"><span class="gold mr-3 font-bold">✔</span> Pharmaceutical & Surgical Equipment</li>
+                        <li class="flex items-start"><span class="gold mr-3 font-bold">✔</span> Dedicated Chain of Custody Documentation</li>
+                        <li class="flex items-start"><span class="gold mr-3 font-bold">✔</span> Scheduled Routes & Emergency STAT Runs</li>
                     </ul>
                 </div>
 
                 <div class="sector-card p-12 rounded-xl">
-                    <h4 class="text-3xl font-bold mb-8 gold-text uppercase tracking-tight border-b border-zinc-800 pb-4 italic">Commercial & Government</h4>
+                    <h4 class="text-3xl font-bold mb-8 gold uppercase tracking-tight border-b border-zinc-800 pb-4 italic">Commercial & Government</h4>
                     <ul class="space-y-4 text-zinc-300 text-md">
-                        <li class="flex items-start"><span class="gold-text mr-3 font-bold">✔</span> Legal & Court Document Filing</li>
-                        <li class="flex items-start"><span class="gold-text mr-3 font-bold">✔</span> Interoffice & Multi-Agency Mail Routes</li>
-                        <li class="flex items-start"><span class="gold-text mr-3 font-bold">✔</span> Government Office Asset Transfers</li>
-                        <li class="flex items-start"><span class="gold-text mr-3 font-bold">✔</span> Secure Business Freight & Logistics</li>
-                        <li class="flex items-start"><span class="gold-text mr-3 font-bold">✔</span> Privacy & Discretion Focused Logistics</li>
+                        <li class="flex items-start"><span class="gold mr-3 font-bold">✔</span> Legal & Court Document Filing</li>
+                        <li class="flex items-start"><span class="gold mr-3 font-bold">✔</span> Interoffice & Multi-Agency Mail Routes</li>
+                        <li class="flex items-start"><span class="gold mr-3 font-bold">✔</span> Government Office Asset Transfers</li>
+                        <li class="flex items-start"><span class="gold mr-3 font-bold">✔</span> Secure Business Freight & Logistics</li>
+                        <li class="flex items-start"><span class="gold mr-3 font-bold">✔</span> Privacy & Discretion Focused Logistics</li>
                     </ul>
                 </div>
             </div>
@@ -152,7 +144,7 @@
 
     <section id="about" class="py-24 px-6 max-w-6xl mx-auto">
         <div class="text-center mb-20">
-            <p class="text-2xl md:text-3xl italic gold-text mb-4">"30+ Years in the Medical Field"</p>
+            <p class="text-2xl md:text-3xl italic gold mb-4">"30+ Years in the Medical Field"</p>
             <h3 class="text-4xl font-bold uppercase tracking-widest">The Founders</h3>
             <p class="mt-6 text-zinc-500 max-w-2xl mx-auto italic">Founded by a mother and son, our business is built on a shared commitment to providing the Durham professional community with the highest standard of custodial integrity.</p>
         </div>
@@ -162,20 +154,20 @@
                 <h4 class="text-3xl font-bold mb-1 uppercase tracking-tight text-white">Kathy Ellison</h4>
                 <p class="stat-brand uppercase text-xs tracking-widest mb-8 font-bold italic">Mother • Registered Nurse • Co-Founder</p>
                 <ul class="space-y-4 text-zinc-300 text-md">
-                    <li><span class="gold-text mr-3">■</span> Registered Nurse (RN)</li>
-                    <li><span class="gold-text mr-3">■</span> OSHA / BBP Certified</li>
-                    <li><span class="gold-text mr-3">■</span> HIPAA-Conscious Handling</li>
-                    <li><span class="gold-text mr-3">■</span> Solid Driving History</li>
+                    <li><span class="gold mr-3">■</span> Registered Nurse (RN)</li>
+                    <li><span class="gold mr-3">■</span> OSHA / BBP Certified</li>
+                    <li><span class="gold mr-3">■</span> HIPAA-Conscious Handling</li>
+                    <li><span class="gold mr-3">■</span> Solid Driving History</li>
                 </ul>
             </div>
             <div class="bg-zinc-900 p-12 rounded-3xl border border-zinc-800">
                 <h4 class="text-3xl font-bold mb-1 uppercase tracking-tight text-white">Karson Ellison</h4>
                 <p class="stat-brand uppercase text-xs tracking-widest mb-8 font-bold italic">Son • Certified Med Tech • Co-Founder</p>
                 <ul class="space-y-4 text-zinc-300 text-md">
-                    <li><span class="gold-text mr-3">■</span> Certified Med Tech (CMT)</li>
-                    <li><span class="gold-text mr-3">■</span> OSHA / BBP Certified</li>
-                    <li><span class="gold-text mr-3">■</span> Mission-Critical Dispatch</li>
-                    <li><span class="gold-text mr-3">■</span> Solid Driving History</li>
+                    <li><span class="gold mr-3">■</span> Certified Med Tech (CMT)</li>
+                    <li><span class="gold mr-3">■</span> OSHA / BBP Certified</li>
+                    <li><span class="gold mr-3">■</span> Mission-Critical Dispatch</li>
+                    <li><span class="gold mr-3">■</span> Solid Driving History</li>
                 </ul>
             </div>
         </div>
@@ -187,7 +179,7 @@
         </h2>
         
         <div class="max-w-xs mx-auto">
-            <a href="tel:9198054450" class="gold-bg block w-full py-6 rounded-2xl font-black text-3xl shadow-2xl transition hover:scale-105 active:scale-95">
+            <a href="tel:9198054450" class="gold-bg block w-full py-6 rounded-2xl font-black text-3xl shadow-2xl transition hover:scale-105">
                 (919) 805-4450
             </a>
         </div>
