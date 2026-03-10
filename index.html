@@ -1,126 +1,156 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STAT Logistics & Freight | Professional Courier</title>
+    <title>STAT Logistics & Freight | Professional Dispatch</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
-        /* High-end Carbon/Slate background to match the flyer */
         body { 
             font-family: 'Inter', sans-serif; 
-            background-color: #0a0a0a;
-            background-image: radial-gradient(circle at top right, #1a1a1a, #000000);
+            background-color: #000000;
             color: #ffffff; 
-            line-height: 1.8; 
+            line-height: 1.6; 
+            scroll-behavior: smooth;
         }
         .gold { color: #D4AF37; }
         .gold-bg { 
-            background: linear-gradient(145deg, #D4AF37, #B8860B); 
+            background: linear-gradient(45deg, #D4AF37, #FBF5B7, #AA771C); 
+            background-size: 200% 200%;
             color: #000; 
+            animation: shine 3s infinite;
+        }
+        @keyframes shine {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
         .serif { font-family: 'Playfair Display', serif; }
         .stat-italic { font-style: italic; color: #D4AF37; }
         
-        /* Premium Image Styling */
-        .header-image {
+        /* Advertising Hero Image */
+        .hero-image {
             width: 100%;
-            max-width: 1000px; 
+            max-width: 1100px; 
             height: auto;
             margin: 0 auto;
             display: block;
-            border: 1px solid rgba(212, 175, 55, 0.3);
-            border-radius: 12px;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.8), 0 0 20px rgba(212, 175, 55, 0.1);
+            border: 1px solid #D4AF37;
+            border-radius: 4px;
+            box-shadow: 0 0 40px rgba(212, 175, 55, 0.3);
         }
 
-        /* Subtle Section Divider */
-        .gold-divider {
-            height: 1px;
-            background: linear-gradient(to right, transparent, #D4AF37, transparent);
-            width: 60%;
-            margin: 0 auto;
-            opacity: 0.4;
+        .pulse {
+            animation: pulse-animation 2s infinite;
         }
 
-        .glass-card {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(8px);
+        @keyframes pulse-animation {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        /* Fixed Bottom Mobile Dispatch Bar */
+        .dispatch-bar {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 100;
+            background: rgba(0,0,0,0.9);
+            border-top: 2px solid #D4AF37;
         }
     </style>
 </head>
 <body>
 
-    <nav class="bg-black/80 border-b border-zinc-800 p-6 sticky top-0 z-50 backdrop-blur-md">
-        <div class="max-w-6xl mx-auto flex flex-wrap justify-between items-center px-4">
-            <div class="text-2xl font-bold serif uppercase tracking-widest">
+    <nav class="bg-black border-b border-zinc-800 p-4 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto flex justify-between items-center px-4">
+            <div class="text-xl md:text-3xl font-black serif uppercase tracking-tighter">
                 <span class="stat-italic">STAT</span> LOGISTICS
             </div>
-            <a href="tel:9198054450" class="gold-bg px-8 py-2 rounded-full font-bold text-sm tracking-widest uppercase transition hover:brightness-110 active:scale-95">
-                (919) 805-4450
+            <a href="tel:9198054450" class="gold-bg px-6 py-2 rounded font-black text-xs uppercase tracking-widest">
+                DISPATCH NOW
             </a>
         </div>
     </nav>
 
-    <header class="py-20 px-6">
+    <header class="py-12 px-6 bg-gradient-to-b from-zinc-950 to-black">
         <div class="max-w-7xl mx-auto text-center">
-            <img src="Screenshot_20260310-080705_Photos~2.png" alt="STAT Logistics Executive Profile" class="header-image mb-16">
+            <img src="Screenshot_20260310-080705_Photos~2.png" alt="STAT Logistics Executive Profile" class="hero-image mb-12">
             
-            <h1 class="text-4xl md:text-6xl serif mb-4 uppercase tracking-tighter">
-                <span class="stat-italic">STAT</span> Logistics & Freight
+            <h1 class="text-5xl md:text-7xl font-black serif mb-6 uppercase tracking-tighter italic">
+                MISSION READY. <span class="gold text-not-italic">STAT.</span>
             </h1>
-            <p class="text-zinc-500 uppercase tracking-[0.4em] text-xs font-bold mb-10">
+            <p class="text-xl text-zinc-400 max-w-2xl mx-auto uppercase tracking-[0.4em] text-xs font-bold mb-10">
                 Durham • Surrounding Areas • Mother & Son Owned
             </p>
-            <div class="gold-divider"></div>
+            <a href="tel:9198054450" class="gold-bg pulse inline-block px-16 py-6 rounded-xl font-black text-2xl uppercase tracking-widest shadow-2xl">
+                CALL DISPATCH
+            </a>
         </div>
     </header>
 
-    <section class="py-24 px-6 max-w-5xl mx-auto">
-        <div class="text-center mb-20">
-            <p class="gold serif text-4xl italic tracking-wide">"30+ Years in the Medical Field"</p>
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-10">
-            <div class="glass-card p-10 rounded-2xl">
-                <h3 class="text-xl font-bold mb-6 gold border-b border-zinc-700 pb-2 uppercase tracking-widest">Kathy Ellison, RN</h3>
-                <ul class="space-y-4 text-zinc-300">
-                    <li class="flex items-center"><span class="gold mr-3">■</span> Registered Nurse</li>
-                    <li class="flex items-center"><span class="gold mr-3">■</span> OSHA Certified</li>
-                    <li class="flex items-center"><span class="gold mr-3">■</span> Blood Borne Pathogen Certified</li>
-                    <li class="flex items-center"><span class="gold mr-3">■</span> Solid Driving History</li>
-                </ul>
-            </div>
-            <div class="glass-card p-10 rounded-2xl">
-                <h3 class="text-xl font-bold mb-6 gold border-b border-zinc-700 pb-2 uppercase tracking-widest">Karson Ellison, CMT</h3>
-                <ul class="space-y-4 text-zinc-300">
-                    <li class="flex items-center"><span class="gold mr-3">■</span> Certified Med Tech</li>
-                    <li class="flex items-center"><span class="gold mr-3">■</span> OSHA Certified</li>
-                    <li class="flex items-center"><span class="gold mr-3">■</span> Blood Borne Pathogen Certified</li>
-                    <li class="flex items-center"><span class="gold mr-3">■</span> Solid Driving History</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-24 bg-black/40 px-6 border-y border-zinc-800">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-2xl gold serif mb-10 uppercase tracking-[0.3em]">Operational Services</h2>
-            <p class="text-lg text-zinc-400 mb-12 font-light leading-relaxed">
-                STAT Logistics & Freight provides high-level medical courier services designed to meet hospital, laboratory, and clinical compliance standards. Our operations prioritize chain of custody, HIPAA awareness, and time-sensitive delivery protocols.
+    <section class="py-24 px-6 max-w-5xl mx-auto text-center">
+        <div class="mb-20">
+            <h2 class="text-sm gold uppercase tracking-[0.5em] mb-4 font-bold">The Family Standard</h2>
+            <p class="text-zinc-300 text-2xl font-light italic leading-relaxed">
+                "Founded by a mother and son, our business is rooted in personal accountability and a shared commitment to the North Carolina professional community."
             </p>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 uppercase tracking-widest text-xs font-bold">
-                <div class="p-6 glass-card rounded-lg hover:bg-zinc-900 transition cursor-default">Medical Transport</div>
-                <div class="p-6 glass-card rounded-lg hover:bg-zinc-900 transition cursor-default">Legal & Court Documents</div>
-                <div class="p-6 glass-card rounded-lg hover:bg-zinc-900 transition cursor-default">Specimen Delivery</div>
-                <div class="p-6 glass-card rounded-lg hover:bg-zinc-900 transition cursor-default">Secure Business Logistics</div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-zinc-900 p-10 rounded-2xl border-l-4 border-gold text-left">
+                <h3 class="text-xl font-bold mb-2 uppercase">Kathy Ellison, RN</h3>
+                <p class="gold text-xs font-bold uppercase mb-4 italic tracking-widest underline">30+ Years Medical Field</p>
+                <ul class="space-y-2 text-zinc-400 text-sm">
+                    <li>• Registered Nurse</li>
+                    <li>• OSHA / BBP Certified</li>
+                    <li>• Compliance Specialist</li>
+                </ul>
+            </div>
+            <div class="bg-zinc-900 p-10 rounded-2xl border-l-4 border-zinc-500 text-left">
+                <h3 class="text-xl font-bold mb-2 uppercase">Karson Ellison, CMT</h3>
+                <p class="gold text-xs font-bold uppercase mb-4 italic tracking-widest underline">Logistics Director</p>
+                <ul class="space-y-2 text-zinc-400 text-sm">
+                    <li>• Certified Med Tech</li>
+                    <li>• Mission-Critical Dispatch</li>
+                    <li>• Logistics Operations</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <footer class="py-24 bg-black text-center px-6">
-        <h2 class="text-xl serif mb-10 uppercase tracking-widest"><span class="stat-italic">STAT</span> Logistics, Freight & Courier</h2>
-        <a href="tel:9198054450" class="gold-bg px-14 py-5 rounded-full font-black text-2xl inline-block transition hover:scale-105 shadow
-            
+    <section class="py-24 bg-zinc-950 px-6 border-y border-zinc-800">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl gold serif mb-12 uppercase tracking-widest">Our Operations</h2>
+            <p class="text-lg text-zinc-400 mb-12">
+                STAT Logistics & Freight provides high-level medical courier services designed to meet clinical compliance standards. We prioritize chain of custody and time-sensitive delivery.
+            </p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 uppercase text-[10px] font-bold tracking-widest">
+                <div class="p-4 bg-black border border-zinc-800 rounded">Medical</div>
+                <div class="p-4 bg-black border border-zinc-800 rounded">Legal</div>
+                <div class="p-4 bg-black border border-zinc-800 rounded">Specimen</div>
+                <div class="p-4 bg-black border border-zinc-800 rounded">Corporate</div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-32 bg-black text-center px-6">
+        <h2 class="text-2xl serif mb-10 uppercase tracking-widest"><span class="stat-italic">STAT</span> Logistics, Freight & Courier</h2>
+        <a href="tel:9198054450" class="gold-bg px-14 py-5 rounded-full font-black text-3xl inline-block shadow-2xl">
+            (919) 805-4450
+        </a>
+        <p class="mt-16 text-zinc-700 text-[10px] uppercase tracking-[0.5em] font-bold">
+            Durham • Surrounding Counties • Family Owned
+        </p>
+    </footer>
+
+    <div class="dispatch-bar md:hidden p-4">
+        <a href="tel:9198054450" class="gold-bg w-full block text-center py-4 rounded font-black text-xl uppercase tracking-widest">
+            DISPATCH NOW
+        </a>
+    </div>
+
+</body>
+</html>
